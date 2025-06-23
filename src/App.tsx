@@ -8,7 +8,7 @@ interface Question {
   explanation: string;
 }
 
-// Все факты из вашего документа
+
 const allQuestions: Question[] = [
   {
     id: 11,
@@ -252,7 +252,6 @@ const allQuestions: Question[] = [
   }
 ];
 
-// Функция для случайного выбора 10 фактов
 const getRandomQuestions = (questions: Question[], count: number = 10): Question[] => {
   const shuffled = [...questions].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
